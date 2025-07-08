@@ -24,10 +24,12 @@ public abstract class Agente {
         public abstract int calcularDano();
 
         public String getNome() {
+
                 return nome;
         }
 
         public int getNivel() {
+
                 return nivel;
         }
 
@@ -36,6 +38,7 @@ public abstract class Agente {
         }
 
         public static boolean isStatus() {
+
                 return status;
         }
 

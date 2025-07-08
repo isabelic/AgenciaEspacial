@@ -17,23 +17,28 @@ public class Missao {
 
  }
     public String getNome() {
-        return nome;
+
+     return nome;
     }
 
     public int getId() {
-        return id;
+
+     return id;
     }
 
-    public int getDificuldade() {
+    public int getDificuldade()
+    {
         return dificuldade;
     }
 
-    public String isConcluida() {
-        return concluida ? "Concluida" : "Pendente";
+    public boolean isConcluida()
+    {
+        return concluida;
     }
 
     public ArrayList<Agente> getMissaoAgente() {
-        return missaoAgente;
+
+     return missaoAgente;
     }
 
 
@@ -72,6 +77,7 @@ public class Missao {
     //quantidade o suficiente de participantes
 
     public boolean QuantidadeMinimaParticipantes(){
+
      return missaoAgente.size() >= (dificuldade + 1);
     }
 
@@ -89,9 +95,7 @@ public class Missao {
 
      System.out.println("""
              ///////Iniciando Missão//////
-             nome
-             id
-             dificuldade
+    
                 \s""");
 
      boolean alterado = true;
@@ -120,10 +124,17 @@ public class Missao {
         return "ID " + id +
                 " | " + nome +
                 " | Dificuldade: " + dificuldade +
-                " | Status: " + isConcluida() +
+                " | Status: " + (concluida ? "Concluída" : "Pendente") +
                 " | Participantes: " + missaoAgente.size();
     }
 
+    public void setNome(String nome) {
+     this.nome = nome;
+    }
+
+    public void setDificuldade(int dificuldade) {
+     this.dificuldade = dificuldade;
+    }
 }
 
 
