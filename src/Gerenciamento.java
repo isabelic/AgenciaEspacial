@@ -173,12 +173,6 @@ public class Gerenciamento {
 
 
 
-
-
-
-
-
-
     public static void agruparMissoesPorDificuldade() {
         ArrayList<Integer> dificuldades = new ArrayList<>();
         for (Missao m : missoes) {

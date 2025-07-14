@@ -6,7 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
         boolean sair = false;
+/* public class NivelInvalidoException extends Exception // RunTimeExeception *{
 
+ Exception - obriga a ter try catch
+  RunTimeExeception - no obriga
+}/
+ */
         while (!sair) {
             System.out.println("\n=== AGÊNCIA ESPACIAL INTERPLANETÁRIA ===");
             System.out.println("1. Gerenciar Agentes");
